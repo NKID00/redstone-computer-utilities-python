@@ -1,6 +1,6 @@
 import redstone_computer_utilities as rcu
 
-script = rcu.create_script('interface_wait')
+script = rcu.create_script('interface_copy')
 interface1 = rcu.Interface('interface1', script)
 interface2 = rcu.Interface('interface2', script)
 
