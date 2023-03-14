@@ -2,14 +2,14 @@
 
 # Redstone Computer Utilities
 
->  Lightweight and Modular Redstone Computer Debugging Tools.
+>  Python Library for [Redstone Computer Utilities](https://github.com/NKID00/redstone-computer-utilities).
 
 ## Installation
 
-Python 3.7.2 or newer (CPython or PyPy) is required.
+Python 3.7.2 or newer (CPython or PyPy) is required,
 
 ```sh
-$ pip install redstone-computer-utilities
+pip install redstone-computer-utilities
 ```
 
 or
@@ -19,4 +19,4 @@ or
 redstone-computer-utilities = "^0.2.0"
 ```
 
-### Check the GitHub repository [NKID00/redstone-computer-utilities](https://github.com/NKID00/redstone-computer-utilities) for details.
+### Check the GitHub repository [NKID00/redstone-computer-utilities-python](https://github.com/NKID00/redstone-computer-utilities-python) for details.
