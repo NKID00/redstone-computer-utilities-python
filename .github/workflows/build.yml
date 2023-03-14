@@ -15,7 +15,7 @@ jobs:
       - name: Setup Poetry
         uses: snok/install-poetry@v1
       - name: Build
-        run: ./gradlew build
+        run: poetry build
       - name: Locate artifacts
         run: |
           echo "ARTIFACT=$( find ./dist/ -name *.whl )" >> $GITHUB_ENV
