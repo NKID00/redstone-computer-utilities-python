@@ -28,11 +28,9 @@ pip install redstone-computer-utilities
 redstone-computer-utilities = "^0.2.0"
 ```
 
-详见 [docs/Usage.md](./docs/Usage.md)。
+详见 [docs/Usage.md](./docs/Usage.zh_cn.md)。
 
 ## 开发
-
-源代码文件位于 `src/redstone_computer_utilities/`。
 
 要构建此库，需要安装 Python 3.7.2 或更新版本（CPython 或 PyPy）和 Poetry，
 

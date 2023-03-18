@@ -32,8 +32,6 @@ See [docs/Usage.md](./docs/Usage.md).
 
 ## Development
 
-Sources are in `src/redstone_computer_utilities/`.
-
 To build the library, Python 3.7.2 or newer (CPython or PyPy) and Poetry are required,
 
 ```sh

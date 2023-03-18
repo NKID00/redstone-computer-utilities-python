@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "redstone-computer-utilities"
-version = "0.2.1"
+version = "0.3.0a0.dev0"
 description = "Python Library for Redstone Computer Utilities."
 authors = ["NKID00 <nkid00@pm.me>"]
 readme = "docs/PyPI.md"
@@ -10,8 +10,8 @@ homepage = "https://github.com/NKID00/redstone-computer-utilities-python"
 [tool.poetry.dependencies]
 python = "^3.7.2"
 colorama = "^0.4.5"
-typing-extensions = "^4.3.0"
-uvloop = "^0.17.0"
+typing-extensions = "^4.5.0"
+websockets = "^10.4"
 
 [tool.poetry.group.dev.dependencies]
 pylint = "^2.14.5"

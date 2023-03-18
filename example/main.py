@@ -1,47 +1,21 @@
-from typing import Optional
-from uuid import UUID
-
 import redstone_computer_utilities as rcu
 
 
-script = rcu.create_script('main')
+script = rcu.Script('main')
+
+def calc_expected_result(test_case):
+    return test_case * 16
 
 
-@script.main
-# one argument, without the optional uuid argument
-async def _(interface: rcu.Interface) -> int:
-    print(f'{interface} @ without uuid')
-    return 0  # return value may be int or None
+@script.on_script_run()
+def _(args):
+    for test_case in range(256):
+        target.write(test_case)
+        script.wait(rcu.redstonetick(2))
+        expected = calc_expected_result(test_case)
+        real = result.read()
+        if expected != real:
+            print(f'Test case failed: expect {expected}, got {real}')
 
 
-@script.main
-# uuid of command source and one argument
-async def _(uuid: Optional[UUID], interface: rcu.Interface) -> Optional[int]:
-    if uuid is None:
-        print('executed by non-player')
-    else:
-        players = await script.list_player()
-        print(f'executed by player {players[uuid][0]}')
-    print(f'{interface} @ with uuid')
-    return 0
-
-
-@script.main
-# zero arguments (obviously without the optional uuid argument)
-async def _() -> None:
-    print('called with no arguments')
-    # returns None (which is treated as 0)
-
-
-@script.main
-# variable arguments
-async def _(uuid: Optional[UUID], *args: rcu.Interface) -> None:
-    if uuid is None:
-        print('executed by non-player')
-    else:
-        players = await script.list_player()
-        print(f'executed by player {players[uuid][0]}')
-    print(f'called with {len(args)} argument(s): {", ".join(map(str, args))}')
-
-
-rcu.run()
+script.run()
