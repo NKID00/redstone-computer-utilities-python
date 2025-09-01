@@ -32,10 +32,10 @@ See [docs/Usage.md](./docs/Usage.md).
 
 ## Development
 
-To build the library, Python 3.7.2 or newer (CPython or PyPy) and Poetry are required,
+To build the library, Python 3.8 or newer (CPython or PyPy) and Poetry are required,
 
 ```sh
-poetry build
+maturin build --release --out dist --find-interpreter
 ```
 
 Built wheels are in `dist/`.
@@ -43,16 +43,11 @@ Built wheels are in `dist/`.
 To install the library into the current virtual environment,
 
 ```sh
-poetry install
+maturin develop
 ```
-
-## Credits
-
-- [colorama](https://github.com/tartley/colorama), distributed under [BSD-3-Clause](https://github.com/tartley/colorama/blob/master/LICENSE.txt).
-- [typing-extensions](https://github.com/python/typing_extensions), distributed under [PSF-2.0](https://github.com/python/typing_extensions/blob/main/LICENSE).
 
 ## Copyright
 
-Copyright © 2021-2023 NKID00
+Copyright © 2021-2025 NKID00
 
-Distributed under [MPL-2.0](./LICENSE).
+Distributed under [Apache-2.0](./LICENSE).

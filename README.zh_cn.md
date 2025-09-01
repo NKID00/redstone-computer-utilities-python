@@ -32,10 +32,10 @@ redstone-computer-utilities = "^0.2.0"
 
 ## 开发
 
-要构建此库，需要安装 Python 3.7.2 或更新版本（CPython 或 PyPy）和 Poetry，
+要构建此库，需要安装 Python 3.8 或更新版本（CPython 或 PyPy）和 Maturin，
 
 ```sh
-poetry build
+maturin build --release --out dist --find-interpreter
 ```
 
 构建出的 wheel 文件位于 `dist/`。
@@ -43,16 +43,11 @@ poetry build
 要安装此库到当前的虚拟环境，
 
 ```sh
-poetry install
+maturin develop
 ```
-
-## 鸣谢
-
-- [colorama](https://github.com/tartley/colorama)，使用 [BSD-3-Clause](https://github.com/tartley/colorama/blob/master/LICENSE.txt) 许可证分发。
-- [typing-extensions](https://github.com/python/typing_extensions)，使用 [PSF-2.0](https://github.com/python/typing_extensions/blob/main/LICENSE) 许可证分发。
 
 ## 版权
 
-版权所有 © 2021-2023 NKID00
+版权所有 © 2021-2025 NKID00
 
-使用 [MPL-2.0](./LICENSE) 许可证分发。
+使用 [Apache-2.0](./LICENSE) 许可证分发。
