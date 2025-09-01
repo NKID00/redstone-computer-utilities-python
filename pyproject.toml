@@ -13,7 +13,7 @@ classifiers = [
 dynamic = ["version"]
 
 [tool.maturin]
-features = ["pyo3/extension-module"]
+features = ["pyo3/extension-module", "pyo3/generate-import-lib"]
 python-source = "python"
 module-name = "redstone_computer_utilities.rcu_shim"
 
