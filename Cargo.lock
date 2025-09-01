@@ -309,7 +309,7 @@ checksum = "13dc2df351e3202783a1fe0d44375f7295ffb4049267b0f3018346dc122a1d94"
 [[package]]
 name = "macros"
 version = "0.1.0"
-source = "git+https://github.com/NKID00/redstone-computer-utilities-rust.git?rev=c3fb78fdce2e7082aa847414fb823650332493e4#c3fb78fdce2e7082aa847414fb823650332493e4"
+source = "git+https://github.com/NKID00/redstone-computer-utilities-rust.git?rev=edc1677f6be31638624fcaa0afe970b24c8ce4fe#edc1677f6be31638624fcaa0afe970b24c8ce4fe"
 
 [[package]]
 name = "matchers"
@@ -583,7 +583,7 @@ dependencies = [
 [[package]]
 name = "redstone-computer-utilities"
 version = "0.3.0"
-source = "git+https://github.com/NKID00/redstone-computer-utilities-rust.git?rev=c3fb78fdce2e7082aa847414fb823650332493e4#c3fb78fdce2e7082aa847414fb823650332493e4"
+source = "git+https://github.com/NKID00/redstone-computer-utilities-rust.git?rev=edc1677f6be31638624fcaa0afe970b24c8ce4fe#edc1677f6be31638624fcaa0afe970b24c8ce4fe"
 dependencies = [
  "futures",
  "macros",
